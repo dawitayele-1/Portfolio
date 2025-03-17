@@ -1,0 +1,918 @@
+@media only screen and (max-width: 750px) {
+    html {
+        font-size: 59%;
+    }
+}
+
+
+@media only screen and (max-width: 400px) {
+    html {
+        font-size: 30%;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background-color: rgb(255, 255, 255);
+    font-size: 62.5%;
+    font-family: "Source Sans Pro", sans-serif;
+
+}
+
+:root {
+    --primarycolor: #6c63ff;
+    --secondarycolor: #333;
+}
+
+/* .logopic {
+    height: auto;
+    width: 200px;
+    
+} */
+.logopic {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Hide Navigation on Small Screens */
+/* 🏆 Fix header position */
+.header101 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 1);
+    height: 80px;
+    width: 100%;
+    padding: 0 20px;
+    box-shadow: 0px 5px rgba(235, 235, 235, 1);
+    position: fixed;
+    z-index: 1000;
+}
+
+/* 🏆 Fix navigation links (desktop view) */
+.header2 {
+    display: flex;
+    gap: 20px;
+}
+
+/* 🏆 Hide Navigation in Small Screens */
+@media screen and (max-width: 650px) {
+    .header2 {
+        display: none;
+        /* Hide by default */
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 100%;
+        background-color: white;
+        text-align: center;
+        padding: 10px 0;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* 🏆 Show menu when active */
+    .header2.active {
+        display: flex;
+    }
+
+    /* 🏆 Burger Menu Icon */
+    .burger {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+}
+
+/* 🏆 Keep menu visible in desktop view */
+@media screen and (min-width: 650px) {
+    .burger {
+        display: none;
+        /* Hide burger on larger screens */
+    }
+
+    .header2 {
+        display: flex;
+    }
+}
+
+/* 🏆 Hover effect */
+.header2 a:hover {
+    color: #6c63ff;
+}
+
+.header1 {
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+.header101 .name {
+    color: #333;
+    padding-right: 100px;
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+
+@media screen and (min-width:650px) and (max-width:800px) {
+    .name {
+        font
+    }
+
+}
+
+.name:hover {
+    color: #6c63ff;
+}
+
+.header101 .header2 a:hover {
+    color: #6c63ff;
+}
+
+.header2 {
+    grid-column: 4/-1;
+    justify-content: end;
+
+}
+
+.header2 a {
+    padding: 0 20px;
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: 600;
+}
+
+
+.mainbg {
+    padding-top: 70px;
+    /* background: radial-gradient(circle, rgba(108, 99, 255, 1) 0%, rgba(255, 255, 255, 1) 100%); */
+
+}
+
+.main {
+    display: grid;
+    grid-template-rows: 1fr 15vh 20vh;
+    background: linear-gradient(to right, rgba(245, 245, 245, 0.9), rgba(245, 245, 245, 0.9)) center center, url(/images/bacgroundimg.svg);
+    background-position: center center;
+}
+
+@media screen and (min-width: 700px) and (max-width: 900px) {
+
+    .main .section1 {
+        margin-bottom: 1.5rem;
+    }
+
+    .main .section1 h1 {
+        font-size: 4rem;
+
+    }
+
+    .main .section2 h4 {
+        font-size: 1.5rem;
+
+    }
+
+
+
+}
+
+.main .section1 {
+    height: 36vh;
+    align-content: end;
+
+}
+
+.main section h1 {
+    text-transform: uppercase;
+    display: grid;
+    text-align: center;
+    align-self: center;
+    font-size: 6rem;
+    letter-spacing: 3px;
+    color: rgb(17, 17, 17);
+    font-weight: 800;
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+.main .section2 {
+    display: grid;
+    height: 18vh;
+    align-content: center;
+
+}
+
+@media screen and (min-width: 900px) and (max-width: 1280px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main .section1 h1 {
+        font-size: 5rem;
+    }
+
+    .main .section2 h4 {
+        font-size: 2rem;
+
+    }
+
+
+}
+
+.main section h4 {
+    display: grid;
+    text-align: center;
+    color: rgb(51, 51, 51);
+    font-size: 2rem;
+    text-align: center;
+    /* width: 0%; */
+    line-height: 1.6;
+    padding-top: 1.5rem;
+    margin-bottom: 0;
+}
+
+
+
+.main .section3 {
+    display: grid;
+    height: 22vh;
+    align-content: center;
+    justify-content: center;
+}
+
+.main .section3 .btn {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    font-weight: 700;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    background: #6c63ff;
+    border-radius: 5px;
+    transition: transform 0.3s;
+    padding: 1rem 5rem;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.mouse-scroll {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    /* Adjust as needed */
+}
+
+.mouse {
+    margin-top: 10rem;
+    width: 24px;
+    height: 40px;
+    border: 2px solid #333;
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wheel {
+    width: 4px;
+    height: 6px;
+    background: #333;
+    border-radius: 10px;
+    animation: scroll 1.5s infinite ease-in-out;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateY(-5px);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(10px);
+        opacity: 0;
+    }
+}
+
+
+
+.main2 {
+    margin-top: 150px;
+    background-color: rgb(248, 255, 255);
+    height: 30vh;
+}
+
+@media screen and (max-width: 400px) {
+    .main2 {
+        margin-top: 50px;
+    }
+
+}
+
+.main2 img {
+    height: 22rem;
+    width: auto;
+    border: 2px solid black;
+}
+
+.main2 article {
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: 3px;
+    font-family: inherit;
+    color: #333;
+}
+
+.line1 {
+    border-top: 5px solid var(--primarycolor);
+    border-radius: 10px;
+    width: 50px;
+    margin: 13px auto;
+
+}
+
+.aboutmeintro {
+    font-size: 1.6rem;
+    color: var(--secondarycolor);
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.main3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* Ensures spacing */
+    align-items: flex-start;
+    /* Makes sure both child divs align in height */
+    width: 100%;
+    /* Ensures it takes up full space */
+    gap: 40px;
+    /* Adds spacing between items */
+}
+
+
+@media only screen and (max-width: 750px) {
+    .main3 {
+        font-size: 1.6rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* background-color: aqua; */
+
+    }
+}
+
+@media only screen and (max-width: 700px) {
+
+    .main3 .contpara,
+    .main3 .contpara2 {
+        width: 80%;
+
+
+
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 900px) {
+    .main3 {
+        margin-top: 5rem;
+
+        font-size: 1.6rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        /* background-color: aqua; */
+
+    }
+
+    .main3 .contpara,
+    .main3 .contpara2 {
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-self: center;
+
+
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contpara,
+.contpara2 {
+    font-size: 1.6rem;
+    width: 40%;
+    /* Ensures both divs fit in the flex container */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* Spaces content evenly */
+    padding: 20px;
+    box-sizing: border-box;
+    /* Prevents overflow */
+    row-gap: 20px;
+    background-color: white;
+    border-radius: 10px;
+    color: var(--secondarycolor);
+}
+
+
+button {
+    align-self: flex-start;
+    /* or flex-end if you want it at the bottom */
+    margin-top: 5px;
+    background-color: var(--primarycolor);
+    padding: 10px 30px;
+    border-radius: 10px;
+    color: white;
+    font-weight: 600;
+    /* Pushes it to the bottom of the div */
+    cursor: pointer;
+}
+
+button:hover {
+    scale: 1.05;
+}
+
+.contpara2 div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.contpara2 div p {
+    font-size: 1.6rem;
+    width: max-content;
+    color: var(--secondarycolor);
+    background-color: oklch(0.928 0.006 264.531);
+    display: inline;
+    padding: 5px 10px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+
+}
+
+
+
+.main4 {
+    margin-top: 10rem;
+    background-color: rgb(248, 255, 255);
+    height: 30vh;
+}
+
+@media only screen and (max-width: 700px) {
+    .main4 {
+        height: 20vh;
+        margin-top: 7rem;
+
+    }
+}
+
+.main4 img {
+    height: 22rem;
+    width: auto;
+    border: 2px solid black;
+}
+
+.main4 article {
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: 3px;
+    font-family: inherit;
+    color: #333;
+}
+
+.projectsintro {
+    font-size: 1.6rem;
+    color: var(--secondarycolor);
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+}
+
+
+
+
+
+.main5 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* Ensures spacing */
+    align-items: center;
+    /* Makes sure both child divs align in height */
+    width: 100%;
+    /* Ensures it takes up full space */
+    gap: 40px;
+    /* Adds spacing between items */
+}
+
+@media only screen and (max-width: 700px) {
+    .main5 {
+        font-size: 1.6rem;
+        flex-direction: column;
+        /* background-color: aqua; */
+
+    }
+}
+
+@media only screen and (max-width: 700px) {
+
+    .main5 .projectimg1,
+    .main5 .projectinfo1 {
+        width: 80%;
+
+
+
+    }
+}
+
+
+
+@media screen and (min-width: 700px) and (max-width: 900px) {
+
+    .main5 {
+        font-size: 1.6rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        /* background-color: aqua; */
+
+    }
+
+    .main5 .projectimg1 {
+        margin-top: 5rem;
+        width: 40rem;
+        height: 20rem;
+
+    }
+
+
+    .main5 .projectinfo1 {
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-self: center;
+
+
+
+    }
+}
+
+
+
+
+
+
+
+
+
+.projectimg1,
+.projectinfo1 {
+    font-size: 1.6rem;
+    width: 40%;
+    /* Ensures both divs fit in the flex container */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* Spaces content evenly */
+    padding: 20px;
+    box-sizing: border-box;
+    /* Prevents overflow */
+    row-gap: 20px;
+    background-color: white;
+    border-radius: 10px;
+    color: var(--secondarycolor);
+}
+
+
+button {
+    align-self: flex-start;
+    /* or flex-end if you want it at the bottom */
+    margin-top: 5px;
+    background-color: var(--primarycolor);
+    padding: 10px 30px;
+    border-radius: 10px;
+    color: white;
+    font-weight: 600;
+    /* Pushes it to the bottom of the div */
+}
+
+button:hover {
+    scale: 1.05;
+}
+
+/* .contpara2 div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+} */
+
+.projectinfo1 div p {
+    font-size: 1.6rem;
+    width: max-content;
+    color: var(--secondarycolor);
+    background-color: oklch(0.928 0.006 264.531);
+    display: inline;
+    padding: 5px 10px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+
+}
+
+
+.main6 {
+    margin-top: 10rem;
+    background-color: rgb(248, 255, 255);
+    height: 30vh;
+}
+
+
+
+@media only screen and (max-width: 700px) {
+    .main6 {
+        height: 20vh;
+
+    }
+}
+
+/* .main4 img {
+    height: 22rem;
+    width: auto;
+    border: 2px solid black;
+} */
+
+.main6 article {
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: 3px;
+    font-family: inherit;
+    color: #333;
+}
+
+.contactintro {
+    font-size: 1.6rem;
+    color: var(--secondarycolor);
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+}
+
+/* 
+.main7 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 40vh;
+    gap: 200px;
+
+
+
+}
+
+.main7 form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 40vh;
+    gap: 2rem;
+    width: inherit;
+
+    width: max-content;
+}
+
+.main7 form div {
+    width: 100%;
+    display: block;
+} */
+
+.main7 {
+
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 40vh;
+    gap: 2rem;
+    justify-content: start;
+    /* Reduced excessive gap */
+
+}
+
+.main7 form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    /* Avoid restricting height */
+    gap: 1.5rem;
+    width: 60%;
+    /* background-color: aqua; */
+    justify-content: center;
+}
+
+.main7 form div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    /* Ensures label stays on top */
+}
+
+.main7 form div label {
+    color: #333;
+
+}
+
+.main7 form input {
+    color: #333;
+    padding: 8px;
+    font-size: 1.2rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    width: 100%;
+    /* Ensures it matches the other inputs */
+    height: 200px;
+    /* Adjust height to match other fields */
+    padding: 8px;
+    font-size: 1.3rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: horizontal;
+}
+
+.main7 button {
+    font-size: 1.2em;
+}
+
+footer {
+    background-color: #6c63ff;
+}
+
+.footer01 {
+    height: 30vh;
+    margin-top: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-content: stretch;
+    row-gap: 200rem;
+}
+
+@media screen and (max-width:1200px) {
+    footer .footer01 .fbox1 {
+        width: 70%;
+
+    }
+
+}
+
+@media screen and (max-width:600px) {
+
+    /* .footer01 {} */
+    footer {
+        margin-top: 10rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer .footer01 {
+        margin-top: 0px;
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        height: 20vh;
+        justify-content: space-around;
+        row-gap: 5px;
+        align-content: center;
+        align-items: start;
+    }
+
+    .fbox2 {
+        display: flex;
+        flex-direction: column;
+        justify-self: start;
+
+    }
+
+}
+
+@media screen and (max-width:400px) {
+
+    footer .footer01 .fbox1 h3 {
+        font-size: 2rem;
+    }
+
+    footer .footer01 .fbox1 p {
+        font-size: 2rem;
+
+    }
+
+    footer .footer01 .fbox2 h3 {
+        font-size: 2rem;
+    }
+
+    footer .copyr {
+        font-size: 2rem;
+    }
+
+}
+
+@media screen and (max-width:300px) {
+    footer .footer01 .fbox1 h3 {
+        font-size: 1rem;
+    }
+
+    footer .footer01 .fbox1 p {
+        font-size: 1rem;
+
+    }
+
+    footer .footer01 .fbox2 h3 {
+        font-size: 1rem;
+    }
+
+    footer .copyr {
+        font-size: 1rem;
+    }
+}
+
+
+
+
+
+
+
+
+.footer01 .fbox1 div {
+    color: #333;
+
+}
+
+.footer01 .fbox1 p,
+h3 {
+    font-size: 1rem;
+}
+
+.footer01 .fbox2 div img {
+    width: 20px;
+    height: 20px;
+}
+
+.fbox1,
+.fbox2 {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+
+.line2 {
+    border-top: 3px solid rgb(255, 255, 255);
+    width: 100%;
+
+}
+
+footer .copyr {
+    font-size: 1rem;
+    text-align: center;
+}
