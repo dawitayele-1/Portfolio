@@ -167,6 +167,16 @@ body {
     background-position: center center;
 }
 
+@media screen and (min-width: 900px) and (max-width: 1040px) {
+
+    .main .section1 {
+        height: 46vh;
+        margin: 3rem 0;
+        align-self: end;
+    }
+
+}
+
 @media screen and (min-width: 700px) and (max-width: 900px) {
 
     .main .section1 {
