@@ -7,7 +7,7 @@
 
 @media only screen and (max-width: 400px) {
     html {
-        font-size: 30%;
+        font-size: 35%;
     }
 }
 
@@ -375,6 +375,14 @@ body {
     /* Adds spacing between items */
 }
 
+@media screen and (max-width: 1200px) {
+
+    .main3 .contpara h3 {
+        font-size: 2.2rem;
+
+    }
+}
+
 
 @media only screen and (max-width: 750px) {
     .main3 {
@@ -401,8 +409,6 @@ body {
 @media screen and (min-width: 700px) and (max-width: 900px) {
     .main3 {
         margin-top: 5rem;
-
-        font-size: 1.6rem;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -419,6 +425,19 @@ body {
         justify-self: center;
 
 
+
+    }
+}
+
+@media screen and (max-width: 2000px) {
+
+    .main3 .contpara p {
+        font-size: 1.2rem;
+
+    }
+
+    .main3 .contpara2 h3 {
+        font-size: 2rem;
 
     }
 }
@@ -481,7 +500,7 @@ button:hover {
 }
 
 .contpara2 div p {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     width: max-content;
     color: var(--secondarycolor);
     background-color: oklch(0.928 0.006 264.531);
@@ -650,8 +669,12 @@ button:hover {
     gap: 10px;
 } */
 
+.projectinfo1 h3 {
+    font-size: 1.6rem
+}
+
 .projectinfo1 div p {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     width: max-content;
     color: var(--secondarycolor);
     background-color: oklch(0.928 0.006 264.531);
@@ -868,21 +891,27 @@ footer {
 }
 
 @media screen and (max-width:300px) {
+    .footer01 {
+        align-items: center;
+        align-content: center;
+    }
+
+
     footer .footer01 .fbox1 h3 {
-        font-size: 1rem;
+        font-size: 1.3rem;
     }
 
     footer .footer01 .fbox1 p {
-        font-size: 1rem;
+        font-size: 1.3rem;
 
     }
 
     footer .footer01 .fbox2 h3 {
-        font-size: 1rem;
+        font-size: 1.3rem;
     }
 
     footer .copyr {
-        font-size: 1rem;
+        font-size: 1.3rem;
     }
 }
 
@@ -912,7 +941,7 @@ h3 {
 .fbox2 {
     display: flex;
     flex-direction: column;
-    row-gap: 1rem;
+    row-gap: 1.4rem;
 }
 
 
