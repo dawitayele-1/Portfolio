@@ -647,7 +647,7 @@ button:hover {
 }
 
 
-button {
+.main5 a {
     align-self: flex-start;
     /* or flex-end if you want it at the bottom */
     margin-top: 5px;
@@ -659,7 +659,7 @@ button {
     /* Pushes it to the bottom of the div */
 }
 
-button:hover {
+.main5 a:hover {
     scale: 1.05;
 }
 
@@ -697,7 +697,8 @@ button:hover {
 
 @media only screen and (max-width: 700px) {
     .main6 {
-        height: 20vh;
+        height: 25vh;
+        margin-bottom: 3rem;
 
     }
 }
@@ -714,6 +715,7 @@ button:hover {
     letter-spacing: 3px;
     font-family: inherit;
     color: #333;
+    line-height: 1.2;
 }
 
 .contactintro {
@@ -722,6 +724,16 @@ button:hover {
     text-align: center;
     width: 60%;
     margin: 0 auto;
+}
+
+.contactintro a {
+    color: white;
+    background-color: var(--primarycolor);
+    padding: .5rem;
+    border-radius: .5rem;
+    margin: 0 2px;
+    line-height: 1.5;
+    font-size: 1.3rem;
 }
 
 /* 
