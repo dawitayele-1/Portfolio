@@ -693,8 +693,54 @@ button:hover {
 .main4-2 {
     margin-top: 10rem;
     background-color: rgb(248, 255, 255);
-    height: 20vh;
+    height: max-content;
+    margin-bottom: 4rem;
 }
+
+@media screen and (max-width: 400px) {
+
+    .main4-2 {
+        height: min-content;
+        margin-bottom: 1rem;
+    }
+}
+
+/* 
+@media screen and (min-width: 1300px) and (max-width: 1600px) {
+    .main4-2 {
+        height: 33vh;
+        background-color: #9b2828;
+    }
+
+}
+
+@media screen and (min-width: 781px) and (max-width: 1300px) {
+
+    .main4-2 {
+        height: 47vh;
+        background-color: #6f6f6f;
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 780px) {
+
+    .main4-2 {
+        height: 25vh;
+        margin-bottom: 2rem;
+        background-color: #6c63ff;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 700px) {
+
+    .main4-2 {
+        height: 25vh;
+        margin-bottom: 1rem;
+        background-color: aqua;
+    }
+} */
+
+
 
 .main4-2 article {
     text-align: center;
@@ -712,6 +758,10 @@ button:hover {
     display: inline-block;
 
 
+}
+
+.main4-2 p {
+    text-align: start;
 }
 
 .main5-2 .cert-img {
