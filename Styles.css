@@ -215,12 +215,41 @@ body {
     font-family: "Source Sans Pro", sans-serif;
 }
 
-.main .section2 {
+.mainquote {
+    color: var(--primarycolor);
+    font-weight: bold;
+    /* Optional */
+    display: inline;
+    white-space: normal;
+}
+
+/* .main .section2 {
     display: grid;
     height: 18vh;
     align-content: center;
 
+} */
+.section2 {
+    display: grid;
+    place-items: center;
+    /* Optional: centers horizontally and vertically */
+    text-align: center;
 }
+
+.section2 h4 {
+    /* max-width: 800px; */
+    /* Optional: controls wrapping more naturally */
+    text-align: center;
+    line-height: 1.5;
+    font-size: 2rem;
+    text-align: center;
+    /* Optional: makes text spacing better */
+    line-height: 1.6;
+    padding-top: 1.5rem;
+    margin-bottom: 0;
+    color: rgb(51, 51, 51);
+}
+
 
 @media screen and (min-width: 900px) and (max-width: 1280px) {
     .main {
@@ -240,17 +269,18 @@ body {
 
 }
 
+/* 
 .main section h4 {
     display: grid;
     text-align: center;
     color: rgb(51, 51, 51);
     font-size: 2rem;
     text-align: center;
-    /* width: 0%; */
+    width: 0%;
     line-height: 1.6;
     padding-top: 1.5rem;
     margin-bottom: 0;
-}
+} */
 
 @media screen and (min-width: 2460px) {
     .main section h4 {
